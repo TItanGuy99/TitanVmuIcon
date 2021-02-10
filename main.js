@@ -17,7 +17,7 @@ function createScreen() {
     
     htmlGenerator = "";
 
-    for(i=1;i<69;i++) {
+    for(i=1;i<65;i++) {
         htmlGenerator +=`<div class="row">
                         <div class="col-2 text-center">`+ i +`</div>`;
         for(j=1;j<9;j++){
@@ -36,19 +36,20 @@ function createScreen() {
 }
 
 function generateArray() {
+    document.getElementById("resultText").value = "";
     finalObject = "";
     finalObject += "{";
-    for(i=1;i<69;i++) {
+    finalObject+=`0x00,0xf0,0x0d,0xf0,0x0f,0xf0,0x00,0x0f,0x44,0xf4,0x62,0xfb,0x96,0xff,0xca,0xff,0xff,0xff,0x00,0xf0,0x00,0xf0,0x00,0xf0,0x00,0xf0,0x00,0xf0,0x00,0xf0,0x00,0xf0,`;
+    for(i=1;i<65;i++) {
         for(j=1;j<9;j++){
             finalObject+=document.getElementById(i+"-"+j).getAttribute("vmuvalue");
 
-            if(i!=69 && j!=8) {
+            if(i+"-"+j !== '64-8') {
                 finalObject+=",";
             }
         }
     }
-    
-    finalObject += "}";
+    finalObject += "};";
     document.getElementById("resultText").value = finalObject;
 }
 
