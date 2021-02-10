@@ -5,42 +5,37 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Titan VMU Icon Draw</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='stylesheet.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <script src="bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-8 bg-blue text-center">
+            <div class="column column75 bg-blue text-center">
                 <h2>Icon on Screen</h2>
+                <div class="bg-blue" id="screen">
+
+                </div>                
             </div>
-            <div class="col-4 bg-orange text-center">
+            <div class="column column25 bg-orange text-center">
                 <h2>Pick a color</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-8 bg-blue" id="screen">
-            </div>
-            <div class="col-4 bg-orange">
-                <div class="row">
-                    <div class="col-2 text-center">Colors: </div>
-                    <div class="col-1 color1" onclick="pick_color('color1', '0x00')">
-                    </div>
-                    <div class="col-1 color2" onclick="pick_color('color2', '0x67')">
-                    </div>
-                    <div class="col-8 text-center"></div>
+
+                <div class="row black fieldColor" onclick="pick_color('black', '0x00')">
                 </div>
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <button type="button" class="btn btn-primary" onclick="generateArray()">Generate Code</button>
-                    </div>
+
+                <div class="row white fieldColor" onclick="pick_color('white', '0x67')">
                 </div>
-                <div class="row">
-                    <div class="form-group">
-                        <label for="resultText">Result:</label>
-                        <textarea class="form-control" id="resultText" rows="3"></textarea>
-                      </div>
+
+                <div class="row align-center padding-top-10">
+                    <p>Result:</p>
+                </div>
+
+                <div class="row align-center padding-top-10">
+                    <textarea class="form-control" id="resultText" rows="25"></textarea>
+                </div>
+
+                <div class="row align-center padding-top-10">
+                    <button type="button" class="btn btn-primary" onclick="generateArray()">Generate Code</button>
                 </div>
             </div>
         </div>

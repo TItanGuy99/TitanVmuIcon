@@ -1,5 +1,5 @@
-body {
-    color: white !important;
+h2, p {
+    font-family: 'SEGA LOGO FONT';
 }
 
 .bg-blue {
@@ -10,18 +10,59 @@ body {
     background-color: #D03312;
 }
 
-.color1 {
-    background-color: #000000;
-    border-color:gray;
-    border-style: solid;
-    cursor: pointer;
+.field {
+    height: 20px;
+    width: 7%;
 }
 
-.color2 {
+.fieldColor {
+    height: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;   
+}
+
+.column25 {
+    width: 25%;
+}
+
+.column75 {
+    width: 75%;
+}
+
+.column50 {
+    width: 50%;
+}
+
+.black {
+    background-color: #000000;
+    cursor: pointer;   
+}
+
+.white {
     background-color: #FFFFFF;
+    cursor: pointer;   
+}
+
+.border {
     border-color:gray;
     border-style: solid;
-    cursor: pointer;
 }
 
 .btn {
@@ -30,4 +71,9 @@ body {
 
 .align-center {
     align-items: center;
+    justify-content: center;
+}
+
+.padding-top-10 {
+    padding-top: 10px;
 }
