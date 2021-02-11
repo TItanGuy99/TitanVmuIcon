@@ -98,3 +98,11 @@ function loadArray() {
         }
     }
 }
+
+function clean() {
+    document.getElementById("resultText").value = "";
+    for(i=0;i<513;i++) {
+        document.getElementById(i).classList.remove("color1","color2", "color3", "color4", "color5", "color6", "color7");
+        document.getElementById(i).classList.add("color1");
+    }
+}
