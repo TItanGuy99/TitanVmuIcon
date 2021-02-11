@@ -50,14 +50,39 @@ h2, p {
     width: 50%;
 }
 
-.black {
+.color1 {
     background-color: #000000;
     cursor: pointer;   
 }
 
-.white {
-    background-color: #FFFFFF;
+.color2 {
+    background-color: #46A38C;
     cursor: pointer;   
+}
+
+.color3 {
+    background-color: #B9C9D4;
+    cursor: pointer;
+}
+
+.color4 {
+    background-color: #FFF4C7;
+    cursor: pointer;
+}
+
+.color5 {
+    background-color: #B9C9D4;
+    cursor: pointer;
+}
+
+.color6 {
+    background-color: #986810;
+    cursor: pointer;
+}
+
+.color7 {
+    background-color: #777777;
+    cursor: pointer;
 }
 
 .border {

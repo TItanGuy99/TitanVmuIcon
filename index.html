@@ -20,10 +20,25 @@
             <div class="column column25 bg-orange text-center">
                 <h2>Pick a color</h2>
 
-                <div class="row black fieldColor" onclick="pick_color('black', '0x00')">
+                <div class="row color1 fieldColor" onclick="pick_color('color1', '0x00')">
                 </div>
 
-                <div class="row white fieldColor" onclick="pick_color('white', '0x67')">
+                <div class="row color2 fieldColor" onclick="pick_color('color2', '0x44')">
+                </div>
+
+                <div class="row color3 fieldColor" onclick="pick_color('color3', '0x33')">
+                </div>
+
+                <div class="row color4 fieldColor" onclick="pick_color('color4', '0x66')">
+                </div>
+
+                <div class="row color5 fieldColor" onclick="pick_color('color5', '0x22')">
+                </div>
+
+                <div class="row color6 fieldColor" onclick="pick_color('color6', '0xCC')">
+                </div>
+
+                <div class="row color7 fieldColor" onclick="pick_color('color7', '0x77')">
                 </div>
 
                 <div class="row align-center padding-top-10">
@@ -35,7 +50,11 @@
                 </div>
 
                 <div class="row align-center padding-top-10">
-                    <button type="button" class="btn btn-primary" onclick="generateArray()">Generate Code</button>
+                    <button type="button" onclick="generateArray()">Generate Code</button>
+                </div>
+
+                <div class="row align-center padding-top-10">
+                    <button type="button" onclick="loadArray()">Load Code</button>
                 </div>
             </div>
         </div>
