@@ -66,34 +66,42 @@ function loadArray() {
         switch(arr[i]) {
             case "0x00":
                 document.getElementById(i-32).classList.add("color1");
+                document.getElementById(i-32).setAttribute("vmuvalue", "0x00");
             break;
 
             case "0x44":
                 document.getElementById(i-32).classList.add("color2");
+                document.getElementById(i-32).setAttribute("vmuvalue", "0x44");
             break;
 
             case "0x33":
                 document.getElementById(i-32).classList.add("color3");
+                document.getElementById(i-32).setAttribute("vmuvalue", "0x33");
             break;
 
             case "0x66":
                 document.getElementById(i-32).classList.add("color4");
+                document.getElementById(i-32).setAttribute("vmuvalue", "0x66");
             break;
 
             case "0x22":
                 document.getElementById(i-32).classList.add("color5");
+                document.getElementById(i-32).setAttribute("vmuvalue", "0x22");
             break;
 
             case "0xCC":
                 document.getElementById(i-32).classList.add("color6");
+                document.getElementById(i-32).setAttribute("vmuvalue", "0xCC");
             break;
 
             case "0x77":
                 document.getElementById(i-32).classList.add("color7");
+                document.getElementById(i-32).setAttribute("vmuvalue", "0x77");
             break;
 
             default:
                 document.getElementById(i-32).classList.add("color1");
+                document.getElementById(i-32).setAttribute("vmuvalue", "0x00");
             break;
         }
     }
