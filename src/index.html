@@ -1,68 +1,87 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Titan Icon Draw</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='stylesheet.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="stylesheet.css"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="row">
-            <div class="column column75 bg-blue text-center">
-                <h2>Icon on Screen</h2>
-                <div class="bg-blue" id="screen">
-
-                </div>                
-            </div>
-            <div class="column column25 bg-orange text-center">
-                <h2>Pick a color</h2>
-
-                <div class="row color1 fieldColor" onclick="pick_color('color1', '0x00')">
-                </div>
-
-                <div class="row color2 fieldColor" onclick="pick_color('color2', '0x44')">
-                </div>
-
-                <div class="row color3 fieldColor" onclick="pick_color('color3', '0x33')">
-                </div>
-
-                <div class="row color4 fieldColor" onclick="pick_color('color4', '0x66')">
-                </div>
-
-                <div class="row color5 fieldColor" onclick="pick_color('color5', '0x22')">
-                </div>
-
-                <div class="row color6 fieldColor" onclick="pick_color('color6', '0xCC')">
-                </div>
-
-                <div class="row color7 fieldColor" onclick="pick_color('color7', '0x77')">
-                </div>
-
-                <div class="row align-center padding-top-10">
-                    <p>Result:</p>
-                </div>
-
-                <div class="row align-center padding-top-10">
-                    <textarea class="form-control" id="resultText" rows="25"></textarea>
-                </div>
-
-                <div class="row align-center padding-top-10">
-                    <button type="button" onclick="generateArray()">Generate Code</button>
-                </div>
-
-                <div class="row align-center padding-top-10">
-                    <button type="button" onclick="loadArray()">Load Code</button>
-                </div>
-
-                <div class="row align-center padding-top-10">
-                    <button type="button" onclick="clean()">Clear Screen</button>
-                </div>
-            </div>
+      <div class="row">
+        <div class="column column75 bg-blue text-center">
+          <h2>Icon on Screen</h2>
+          <div class="bg-blue" id="screen"></div>
         </div>
+        <div class="column column25 bg-orange text-center">
+          <h2>Pick a color</h2>
+
+          <div
+            class="row color1 fieldColor"
+            onclick="pick_color('color1', '0x00')"
+          ></div>
+
+          <div
+            class="row color2 fieldColor"
+            onclick="pick_color('color2', '0x44')"
+          ></div>
+
+          <div
+            class="row color3 fieldColor"
+            onclick="pick_color('color3', '0x33')"
+          ></div>
+
+          <div
+            class="row color4 fieldColor"
+            onclick="pick_color('color4', '0x66')"
+          ></div>
+
+          <div
+            class="row color5 fieldColor"
+            onclick="pick_color('color5', '0x22')"
+          ></div>
+
+          <div
+            class="row color6 fieldColor"
+            onclick="pick_color('color6', '0xCC')"
+          ></div>
+
+          <div
+            class="row color7 fieldColor"
+            onclick="pick_color('color7', '0x77')"
+          ></div>
+
+          <div class="row align-center padding-top-10">
+            <p>Result:</p>
+          </div>
+
+          <div class="row align-center padding-top-10">
+            <textarea class="form-control" id="resultText" rows="25"></textarea>
+          </div>
+
+          <div class="row align-center padding-top-10">
+            <button type="button" onclick="generateArray()">
+              Generate Code
+            </button>
+          </div>
+
+          <div class="row align-center padding-top-10">
+            <button type="button" onclick="loadArray()">Load Code</button>
+          </div>
+
+          <div class="row align-center padding-top-10">
+            <button type="button" onclick="clean()">Clear Screen</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src='main.js'></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
